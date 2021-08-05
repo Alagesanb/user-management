@@ -1,0 +1,62 @@
+<div class="main-page">
+        
+    <div class="contents-page">
+              
+        <div class="login-container">
+            
+          <div class="row">  
+
+             <div class="col-md-8">
+               <div class="row justify-content-center">
+      <div class="col-md-6">
+          <!-- White Container -->
+          <div class="container bg-white rounded mt-2 mb-2 px-0">
+              <!-- Main Heading -->
+              <div class="row justify-content-center align-items-center pt-3">
+                  <h2>Login</h2>
+              </div>
+              <div class="pt-3 pb-3">
+                  
+                <form  class="form-horizontal" [formGroup]="form"  novalidate>
+                    <!-- Email Input -->
+                    <div class="form-group row justify-content-center px-3">
+                        <div class="col-6 px-0"> 
+                             <div class="input-container">
+                            <input class="input-field form-control" type="email" formControlName="Email" placeholder="Email"
+                            [ngClass]="{ 'is-invalid': submitted && f.Email.errors }" (keyup.enter)= signup()>
+                            </div>
+                        </div>
+                    </div> <!-- Password Input -->
+                    <div class="form-group row justify-content-center px-3">
+                        <div class="col-6 px-0"> 
+                            <div class="input-container">
+                                <input class="input-field form-control" type="password" formControlName="Password" placeholder="Password"
+                                [ngClass]="{ 'is-invalid': submitted && f.Password.errors }" (keyup.enter)= signup()>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Sign Up in Button -->
+                    <div class="form-group row justify-content-center">
+                        <div class="col-6 px-0 div-cls-login"><a >
+                             <input type="button" (click)= login()  value="Login" class="btn btn-info"></a> </div>
+                    </div>
+                </form>
+            </div>
+             
+          </div>
+      </div>
+  </div>
+             
+            </div>
+              
+            </div>
+        
+
+
+
+
+        </div>
+        
+        
+    </div>
+</div>
